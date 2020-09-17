@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+<EditText
+    android:id="@+id/et_url"
+    android:layout_weight="0.7"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="search"/>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            android:id="@+id/btn_fb"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/facebook"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/btn_youtube"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+
+            android:src="@drawable/youtube"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/btn_insta"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/instagram"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/btn_file"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/html"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

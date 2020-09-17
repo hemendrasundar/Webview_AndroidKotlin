@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <script language="JavaScript">
+      function login(){
+       var uname = document.getElementById("username").value;
+       var password = document.getElementById("password").value;
+       var url = document.getElementById("url").value;
+       myinterface.callfromjs(uname,password,url);
+      }
+  </script>
+</head>
+<body bgcolor="#ff0000" text="white">
+
+<center>
+
+    <table border="1">
+
+        <tr><td colspan="2" align="center"> Login Form</td></tr>
+        <tr><td> Username</td> <td><input type="text" id="username"></td></tr>
+        <tr><td> Password</td> <td><input type="text" id="password"></td></tr>
+        <tr><td> Url</td> <td><input type="text" id="url"></td></tr>
+        <tr><td  colspan="2" align="center"><input type="button" value="SUBMIT" onclick="login()"></td></tr>
+    </table>
+
+</center>
+
+</body>
+
+</html>
